@@ -1,10 +1,12 @@
 {
     "private": true,
     "type": "module",
+  
     "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
+    "build": "vite build",
+    "postinstall": "npm run build && php artisan migrate --force",
+    "start": "php artisan serve --host=monorail.proxy.rlwy.net --port=17269"
+},
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "autoprefixer": "^10.4.16",

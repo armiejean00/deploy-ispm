@@ -6,50 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ApexHubSpot</title>
-  
+    @vite('resources/css/app.css')
 </head>
 
-
-
 <body class="font-semibold">
-
-    <style>
-        body::before {
-    z-index: -1;
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../public/images/ahs-apeMono.svg");
-    background-repeat: no-repeat;
-    background-size: 900px;
-    background-position: -40% 40%;
-    opacity: 0.04;
-}
-
-@media (max-width: 1240px) {
-    body::before {
-        background-size: 700px;
-        background-position-y: -90%;
-    }
-}
-@media (max-width: 976px) {
-    body::before {
-        background-size: 600px;
-        background-position-y: -20%;
-    }
-}
-@media (max-width: 768px) {
-    body::before{
-        background-size: 500px;
-    }
-
-    body.landing::before {
-        background-position: 30% 250%;
-    }
-}
-    </style>
     {{-- NavBar --}}
     <nav class="relative container mx-auto p-4 text-center md:p-6">
         {{-- Flex Container --}}
